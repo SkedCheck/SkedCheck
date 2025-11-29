@@ -1445,7 +1445,10 @@ if 'active_profile_id' not in st.session_state:
     st.session_state.active_profile_id = profile_map['Current Schedule']
 elif st.session_state.active_profile_id not in profile_id_map:
     st.session_state.active_profile_id = profile_map['Current Schedule']
-
+st.warning("""
+    ⚠️ **BETA DATA WARNING:** This app resets if you leave it for too long! 
+    **You must save your work** by downloading a JSON Backup (Tab 2) after every session.
+""", icon="💾")
 # --- NEW HEADER LAYOUT ---
 col_logo, col_prof, col_tz, col_btn = st.columns([1.5, 2, 2, 1])
 

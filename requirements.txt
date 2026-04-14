@@ -1,4 +1,5 @@
 streamlit
 pandas
-ics
 pytz
+ics==0.7.2
+tatsu==5.7.4

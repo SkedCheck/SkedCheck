@@ -1,0 +1,7 @@
+streamlit
+pandas
+sqlite3  # built-in
+python-dateutil
+pytz
+zoneinfo
+ics

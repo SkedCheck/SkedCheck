@@ -1,0 +1,18 @@
+/skedcheck/
+├── streamlit_app.py          # Main entry point (keeps it simple)
+├── src/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── database.py           # All DB functions
+│   ├── parsers.py            # parse_trip_dump, parse_bid_dump, etc.
+│   ├── calculator.py         # FAR117Calculator + remaining range logic
+│   ├── utils.py              # helpers (hours_to_hhmm, etc.)
+│   ├── exporters.py          # iCal, JSON, civilian export
+│   └── ui/                   # Streamlit UI components
+│       ├── __init__.py
+│       ├── calendar.py
+│       ├── forms.py
+│       └── detail_view.py
+├── data/                     # (optional) example data
+├── requirements.txt
+└── SkedCheck.db              # (gitignored)
